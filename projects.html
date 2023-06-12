@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        .navbar {
+            width: 100%;
+            background-color: #555;
+            overflow: auto;
+        }
+        
+        .navbar a {
+            float: left;
+            padding: 12px;
+            color: white;
+            text-decoration: none;
+            font-size: 17px;
+        }
+        
+        .navbar a:hover {
+            background-color: #000;
+        }
+        
+        .active {
+            background-color: #04AA6D;
+        }
+        
+        @media screen and (max-width: 500px) {
+            .navbar a {
+                float: none;
+                display: block;
+            }
+        }
+    </style>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        /* Full-width input fields */
+        
+        input[type=text],
+        input[type=password] {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+        /* Set a style for all buttons */
+        
+        button {
+            background-color: #04AA6D;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+        }
+        
+        button:hover {
+            opacity: 0.8;
+        }
+        /* Extra styles for the cancel button */
+        
+        .cancelbtn {
+            width: auto;
+            padding: 10px 18px;
+            background-color: #f44336;
+        }
+        /* Center the image and position the close button */
+        
+        .imgcontainer {
+            text-align: center;
+            margin: 24px 0 12px 0;
+            position: relative;
+        }
+        
+        img.avatar {
+            width: 40%;
+            border-radius: 50%;
+        }
+        
+        .container {
+            padding: 16px;
+        }
+        
+        span.psw {
+            float: right;
+            padding-top: 16px;
+        }
+        /* The Modal (background) */
+        
+        .modal {
+            display: none;
+            /* Hidden by default */
+            position: fixed;
+            /* Stay in place */
+            z-index: 1;
+            /* Sit on top */
+            left: 0;
+            top: 0;
+            width: 100%;
+            /* Full width */
+            height: 100%;
+            /* Full height */
+            overflow: auto;
+            /* Enable scroll if needed */
+            background-color: rgb(0, 0, 0);
+            /* Fallback color */
+            background-color: rgba(0, 0, 0, 0.4);
+            /* Black w/ opacity */
+            padding-top: 60px;
+        }
+        /* Modal Content/Box */
+        
+        .modal-content {
+            background-color: #fefefe;
+            margin: 5% auto 15% auto;
+            /* 5% from the top, 15% from the bottom and centered */
+            border: 1px solid #888;
+            width: 80%;
+            /* Could be more or less, depending on screen size */
+        }
+        /* The Close Button (x) */
+        
+        .close {
+            position: absolute;
+            right: 25px;
+            top: 0;
+            color: #000;
+            font-size: 35px;
+            font-weight: bold;
+        }
+        
+        .close:hover,
+        .close:focus {
+            color: red;
+            cursor: pointer;
+        }
+        /* Add Zoom Animation */
+        
+        .animate {
+            -webkit-animation: animatezoom 0.6s;
+            animation: animatezoom 0.6s
+        }
+        
+        @-webkit-keyframes animatezoom {
+            from {
+                -webkit-transform: scale(0)
+            }
+            to {
+                -webkit-transform: scale(1)
+            }
+        }
+        
+        @keyframes animatezoom {
+            from {
+                transform: scale(0)
+            }
+            to {
+                transform: scale(1)
+            }
+        }
+        /* Change styles for span and cancel button on extra small screens */
+        
+        @media screen and (max-width: 300px) {
+            span.psw {
+                display: block;
+                float: none;
+            }
+            .cancelbtn {
+                width: 100%;
+            }
+        }
+    </style>
+    <div class="navbar">
+        <a href="tandons-projects.html"><i class="fa fa-fw fa-home"></i> Home</a>
+        <a href="contact.html"><i class="fa fa-fw fa-users"></i> Contact</a>
+        <a class="active" href="projects.html"><i class="fa fa-fw fa-paper-plane"></i> Projects</a>
+    </div>
+    <link rel="icon" type="image/x-icon" href="C:\Users\1742456\Documents\Logos\Tandon's Projects-logos.zip">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .card {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            max-width: 300px;
+            margin: auto;
+            text-align: center;
+            font-family: arial;
+        }
+        
+        .price {
+            color: grey;
+            font-size: 22px;
+        }
+        
+        .card button {
+            border: none;
+            outline: 0;
+            padding: 12px;
+            color: white;
+            background-color: #000;
+            text-align: center;
+            cursor: pointer;
+            width: 100%;
+            font-size: 18px;
+        }
+        
+        .card button:hover {
+            opacity: 0.7;
+        }
+    </style>
+
+    <body style="background-color: red;">
+        <style>
+            .badge {
+                background-color: red;
+                color: white;
+                padding: 4px 8px;
+                text-align: center;
+                border-radius: 5px;
+            }
+        </style>
+        <title>Projects</title>
+        <h1 style="font-family: 'Courier New', Courier, monospace;" align="center">Projects</h1>
+
+        <body style="background-color: red;">
+            <p style="font-family: Georgia;" align="center">Here are the projects I have made so far:</p>
+        </body>
+        <h2 style="font-family: 'Courier New', Courier, monospace;" align="center">Recommended</h2>
+        <div class="card">
+            <img src="C:\Users\1742456\Documents\Chills - Medieval.png" alt="Chills - Medieval" style="width:100%">
+
+            <form method="get" action="Chills - Medieval.mp3">
+                <h1>Chills - Medieval</h1>
+                <p>This is the latest song I have made so far. Credit to Soundtrap for helping me make this song.</p>
+                <p>
+                    <button type="button" class="button" data-download="C:\Users\1742456\Music\Chills - Medieval.mp3"><i class="fa fa-download"></i><a href="C:\Users\1742456\Music\Chills - Medieval.mp3"> Download</a></button>
+                </p>
+
+            </form>
+
+        </div>
+        <h1 style="font-family: 'Courier New', Courier, monospace;" align="center">Other</h1>
+        <h2 style="font-family: 'Courier New', Courier, monospace;" align="center">Coming Soon!</h2>
+    </body>
+</head>
+
+</html>
